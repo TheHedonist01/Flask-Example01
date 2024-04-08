@@ -20,50 +20,56 @@ El objetivo de este proyecto es "Dockerizar" dos aplicaciones web, una desarroll
 **Librerias y dependencias:**
 
 **Angular:**
-* Node.js
-* Angular CLI
-* NPM
-* Paquetes específicos de la aplicación (ver `package.json`)
+* **Node.js**
+* **Angular CLI**
+* **NPM**
+* *Paquetes específicos de la aplicación (ver `package.json`)*
 
 **Flask:**
-* Python
-* Paquetes específicos de la aplicación (ver `requirements.txt`)
+* **Python**
+* **Docker** 
+* *Paquetes específicos de la aplicación (ver `requirements.txt`)*
 
-**Tu progreso:**
+**Mi progreso:**
 * **Fork:** Completo
 * **Dockerizado:** Correcto.
 * **Registro público:** Correcto, imágenes en Docker Hub.
 * **Docker Compose:** Correcto, archivos `docker-compose.yml` creados.
 
 **Registry DockerHub:**
-**Angular:** https://hub.docker.com/r/maurodecelta/angular-conduit
-**Flask:** https://hub.docker.com/r/maurodecelta/flask-app
+* **Angular:** https://hub.docker.com/r/maurodecelta/angular-conduit
+* **Flask:** https://hub.docker.com/r/maurodecelta/flask-app
 
 
-**PASOS PARA INICIAR ANGULAR:**
-# Paso 1: Clonar el Repositorio
-git clone https://github.com/TheHedonist01/angular-realworld-exampl02e-app
+## PASOS PARA INICIAR ANGULAR
 
-# Instalar dependencias
+*Clonar el Repositorio*
+```console
+* git clone https://github.com/TheHedonist01/angular-realworld-exampl02e-app
+```
+*Instalar dependencias*
+```console
 $ npm install
-# Iniciar servidor
-$ npm run start
-# Abierta en el navegador: http://localhost:4200
+```
+*Iniciar servidor*
+```console
+ $ npm run start
+```
+*En en Navegador: http://localhost:4200*
 
-**PASOS PARA INICIAR FLASK:**
+## PASOS PARA INICIAR FLASK
 
-# Paso 1: Clonar el Repositorio
+**Clonar el Repositorio**
+```console
 git clone https://github.com/TheHedonist01/Flask-Example01
+```
+**Iniciar construccion del Docker**
+```console
+docker build -t flask-app .    
+```
 
-# Instalar dependencias
-** Phyton **
-** Docker **
-** NPM **
-
-# Iniciar construccion del Docker
-docker build -t flask-app .    #Construye el Docker - *Tener DockerHub Instalado
-
-# Ejecutar contenedor - Abriendo puertos
-docker run -p 5000:5000 flask-app    #Abre los puertos
-
-# Abierta en el navegador: http://localhost:4200
+**Ejecutar contenedor - Abriendo puertos**
+```console
+docker run -p 5000:5000 flask-app   
+```
+*En en Navegador*: http://localhost:4200
