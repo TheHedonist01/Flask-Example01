@@ -43,15 +43,15 @@ El objetivo de este proyecto es "Dockerizar" dos aplicaciones web, una desarroll
 
 ## PASOS PARA INICIAR ANGULAR
 
-*Clonar el Repositorio*
+**Clonar el Repositorio**
 ```console
 * git clone https://github.com/TheHedonist01/angular-realworld-exampl02e-app
 ```
-*Instalar dependencias*
+**Instalar dependencias**
 ```console
 $ npm install
 ```
-*Iniciar servidor*
+**Iniciar servidor**
 ```console
  $ npm run start
 ```
