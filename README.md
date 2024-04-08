@@ -1,91 +1,69 @@
-[![Issues](https://img.shields.io/github/issues/jainamoswal/Flask-Example?style=for-the-badge&color=green)](https://github.com/jainamoswal/Flask-Example/issues)
-[![Forks](https://img.shields.io/github/forks/jainamoswal/Flask-Example?style=for-the-badge&color=green)](https://github.com/jainamoswal/Flask-Example/fork)
-[![Stars](https://img.shields.io/github/stars/jainamoswal/Flask-Example?style=for-the-badge&color=green)](https://github.com/jainamoswal/Flask-Example)
-[![Size](https://img.shields.io/github/repo-size/jainamoswal/Flask-Example?style=for-the-badge&color=green)](https://github.com/jainamoswal/Flask-Example)
-[![Contributors](https://img.shields.io/github/contributors/jainamoswal/Flask-Example?style=for-the-badge&color=green)](https://github.com/jainamoswal/Flask-Example)
+**Dockerizar una aplicación Angular y Flask**
 
----
-| 🗺 Routes 🗺 | 🚧 Usage 🚧 | 
-| :-: | :-: |
-| `/api` | For API. |
-| `/file` | For streaming files. |
-| `/dl` | For downloading a file. |
-| `/<name>` | Says Hello! 🤚 |
-| `/code` | For redirection. |
-| `/cookies/set` | For setting cookies. |
-| `/cookies/get` | For retrieving cookies. |
-| `/cookies/del` | For deleting cookies. |
-| `/headers` | For working with Headers. |
-| `/ip` | For location based user interface. |
-| `/q` | For getting the parameters passed with URL. |
+**Objetivo:**
 
----
-## How to use this ? 
-- Don't be scared 😬 by watching a ton files, Most are just to configure the deploy settings. 🏋️‍♂️
-- Star this repository. ⭐️
-- Make a new repository by clicking [here.](https://github.com/jainamoswal/Flask-Example/generate) 👲
-- Go to [modules folder](modules). 📂
-- Add or modify the plugins. ✏️
-- Crawl any hosting provider. 🕷
-- Link your (Newly generated 🍽) repository with it. 🔗
-- Deploy it there or replace your username [here](#deployments) and deploy using buttons. 🚀 
-- And done. ✅
+El objetivo de este proyecto es "Dockerizar" dos aplicaciones web, una desarrollada con Angular y otra con Flask. Los repositorios de las aplicaciones son:
 
-#### OR 
-- Just [deploy](#deployments) this repository for testing. 🧪
+- **Angular:** [https://github.com/gothinkster/angular-realworld-example-app]
+- **Flask:** [https://github.com/jainamoswal/Flask-Example]
 
-### Deployments
+**Características:**
 
+* **Imagen de Docker:**
+    * Imagen de Docker para cada aplicación.
+* **Construcción de Registry Publico:**
+    * Imágenes de Docker en Docker Hub.
+    * Uso de Github Desktop.
+* **Exposición como servicio:**
+    * **Docker Compose:** Archivos `docker-compose.yml` para cada aplicación.
 
+**Librerias y dependencias:**
 
-<details><summary>Heroku.com 🚀</summary>
-<br>
+**Angular:**
+* Node.js
+* Angular CLI
+* NPM
+* Paquetes específicos de la aplicación (ver `package.json`)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jainamoswal/Flask-Example)
-</details>
- 
-<details><summary>Replit.com 🌀</summary>
-<br>
+**Flask:**
+* Python
+* Paquetes específicos de la aplicación (ver `requirements.txt`)
 
-[![Run on Repl.it](https://repl.it/badge/github/jainamoswal/Flask-Example)](https://repl.it/github/jainamoswal/Flask-Example)
-</details>
+**Tu progreso:**
+* **Fork:** Completo
+* **Dockerizado:** Correcto.
+* **Registro público:** Correcto, imágenes en Docker Hub.
+* **Docker Compose:** Correcto, archivos `docker-compose.yml` creados.
 
-<details><summary>Zeet.co 💪</summary>
-<br>
- 
-[![Deploy](https://deploy.zeet.co/Flask-Example.svg)](https://deploy.zeet.co?url=https://github.com/jainamoswal/Flask-Example)
-</details>
-
-#### Adding some other hosting providers too 🤧 soon.
+**Registry DockerHub:**
+**Angular:** https://hub.docker.com/r/maurodecelta/angular-conduit
+**Flask:** https://hub.docker.com/r/maurodecelta/flask-app
 
 
+**PASOS PARA INICIAR ANGULAR:**
+# Paso 1: Clonar el Repositorio
+git clone https://github.com/TheHedonist01/angular-realworld-exampl02e-app
 
+# Instalar dependencias
+$ npm install
+# Iniciar servidor
+$ npm run start
+# Abierta en el navegador: http://localhost:4200
 
----
+**PASOS PARA INICIAR FLASK:**
 
-<details>
-<summary>Support ground. ⛹️‍♂️🤝</summary>
-<br>  
-  
-- [![Channel](https://img.shields.io/badge/Telegram-Channel-green?style=for-the-badge&logo=telegram)](https://t.me/J_projects)
-- [![Support](https://img.shields.io/badge/Telegram-Group-green?style=for-the-badge&logo=telegram)](https://t.me/J_projects_chat)
-</details>
+# Paso 1: Clonar el Repositorio
+git clone https://github.com/TheHedonist01/Flask-Example01
 
+# Instalar dependencias
+** Phyton **
+** Docker **
+** NPM **
 
+# Iniciar construccion del Docker
+docker build -t flask-app .    #Construye el Docker - *Tener DockerHub Instalado
 
-<details>
-<summary>Donate. 💰💷</summary>
-<br>  
-  
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/jainamoswal) 
-[![paypal](https://www.paypalobjects.com/webstatic/en_AU/i/buttons/btn_paywith_primary_s.png)](https://paypal.me/joswal105)
-</details>
+# Ejecutar contenedor - Abriendo puertos
+docker run -p 5000:5000 flask-app    #Abre los puertos
 
-
-
-## License 
-### [Flask-Example](https://github.com/jainamoswal/Flask-Example) is licensed under [IDC v1](https://github.com/jainamoswal/idc) or later.
-[![idc](https://telegra.ph/file/e52d9b970e6967b3d6b6a.png)](https://github.com/jainamoswal/idc)
-
-`This LICENSE is widely used when the owner of the content does not care what you do from the source.
-No one can appeal copyright or DMCA takedown notices. The end user is free to do anything from the content. Nor the owners or distributors are affiliated with any crime done by the content of the LICENSE. `
+# Abierta en el navegador: http://localhost:4200
